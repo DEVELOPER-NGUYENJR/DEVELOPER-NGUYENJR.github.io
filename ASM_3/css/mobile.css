@@ -1,0 +1,119 @@
+/* Responsive website for mobile */
+@media only screen and (max-width: 768px) {
+  /* Index */
+  body {
+    width: 600px;
+  }
+
+  /* Banner */
+  #banner h1 {
+    font-size: 24px;
+  }
+
+  /* Navigation bar */
+  #nav-bar img {
+    display: none;
+  }
+
+  #nav-bar nav {
+    grid-template-columns: 1fr;
+  }
+
+  #nav-bar nav div:first-of-type,
+  #nav-bar nav div:nth-of-type(2),
+  #nav-bar nav div:nth-of-type(4) {
+    border-bottom: var(--border-style);
+    border-right: var(--border-style);
+  }
+
+  #nav-bar nav div:nth-of-type(3) {
+    display: none;
+  }
+
+  /* Section "About me" */
+  #about {
+    background-image: linear-gradient(
+      to bottom,
+      #f3f3f3 50%,
+      #ddd 50%
+    ) !important;
+  }
+
+  #about #target,
+  #about #personal-info {
+    padding: 25px 0;
+    width: 50%;
+  }
+
+  #about #personal-info {
+    position: relative;
+    left: 0;
+  }
+
+  #about #personal-info h1 {
+    position: relative;
+    top: 5px;
+  }
+
+  #about #personal-info .more-info {
+    position: relative;
+    top: 13px;
+  }
+
+  #about div.row {
+    flex-direction: column;
+  }
+
+  /* Section "Job-Info */
+  #job-info {
+    display: block !important;
+    column-count: 1 !important;
+    column-gap: 10px !important;
+    break-inside: avoid !important;
+  }
+
+  /* Section "Certificates" */
+  #certificate .col:first-of-type {
+    border: none !important;
+  }
+
+  #certificate .row:last-of-type {
+    border: none !important;
+  }
+
+  /* Section "Projects" */
+  #project .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  #project table {
+    width: 100%;
+  }
+
+  /* Footer */
+  #footer i {
+    font-size: 24px;
+    margin: 0 10px;
+  }
+
+  /* Project chart */
+  #project-chart {
+    grid-template-columns: 1fr;
+    width: 457px;
+  }
+
+  #project-chart .chart {
+    grid-column: 1 / 2;
+    border-bottom: none;
+    border-right: none;
+    width: 438px;
+  }
+
+  #project-chart .scopes {
+    grid-row: 2 / 3;
+  }
+
+  #project-chart .timeline {
+    grid-row: 5 / 7;
+  }
+}

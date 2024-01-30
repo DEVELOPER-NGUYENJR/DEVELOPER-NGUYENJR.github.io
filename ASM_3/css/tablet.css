@@ -1,0 +1,55 @@
+/* Responsive website for tablet */
+@media only screen and (max-width: 996px) {
+  /* Navigation bar */
+  #nav-bar img {
+    display: none;
+  }
+
+  /* Section "About me" */
+  #about #target,
+  #about #personal-info {
+    width: 65%;
+  }
+
+  /* Section "Job Information" */
+  #job-info {
+    margin-top: 20px;
+    display: block;
+    column-count: 2;
+    column-gap: 10px;
+    break-inside: avoid;
+  }
+
+  #job-info .outer-layer {
+    padding: 15px;
+    margin-top: 10px;
+  }
+
+  /* Project chart */
+  #project-chart {
+    grid-template-columns: 1fr;
+  }
+
+  #project-chart .chart {
+    grid-column: 1 / 2;
+    border-top: 10px solid blue;
+    border-bottom: none;
+    border-right: none;
+  }
+
+  #project-chart .goals {
+    border-top: none;
+  }
+
+  #project-chart .scopes {
+    grid-row: 2 / 3;
+  }
+
+  #project-chart .timeline {
+    grid-row: 5 / 7;
+  }
+
+  #project-chart table {
+    width: 100%;
+  }
+}

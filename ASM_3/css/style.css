@@ -1,0 +1,217 @@
+/* Back customizations */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Utilities */
+:root {
+  --color-primary: #199cdb;
+  --border-style: 2px #d3d3d3 solid;
+  --color-secondary: #d3d3d3;
+}
+
+/* General settings? */
+i {
+  color: var(--color-primary);
+  margin-right: 15px;
+}
+
+.bg-grey {
+  background: #f3f3f3;
+}
+
+section > .container {
+  width: 1170px;
+  margin: auto;
+  display: block;
+}
+
+/* Banner */
+#banner h1 {
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#banner p {
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Navigation bar */
+#nav-bar {
+  text-align: center;
+  border-top: var(--border-style);
+  border-bottom: var(--border-style);
+}
+
+#nav-bar img {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 8px white solid;
+  border-radius: 50%;
+}
+
+#nav-bar nav {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+#nav-bar div {
+  height: 30px;
+  border-left: var(--border-style);
+  padding: 5px 5px;
+}
+
+#nav-bar div:last-child {
+  border-right: var(--border-style);
+}
+
+#nav-bar nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* Section "About me" */
+#about {
+  background-image: linear-gradient(to right, #f3f3f3 50%, #ddd 50%);
+}
+
+#about #target,
+#about #personal-info {
+  margin: 25px 36px;
+}
+
+#about #personal-info {
+  position: relative;
+  left: 180px;
+}
+
+/* Section "Job information" */
+#job-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+
+#job-info div.outer-layer {
+  border: var(--border-style);
+}
+
+#job-info div.outer-layer:hover {
+  box-shadow: 10px 10px 20px #888888;
+}
+
+#job-info div.outer-layer .head {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 15px;
+}
+
+#job-info div.outer-layer .head i {
+  font-size: 30px;
+  color: #000;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+#job-info #hobby i {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  color: #199cdb;
+  margin-bottom: 10px;
+  border: 1px #199cdb solid;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 20px;
+}
+
+#job-info .english span,
+#job-info .html span {
+  background: var(--color-secondary);
+  display: inline-block;
+  margin-right: 10px;
+  width: 45px;
+  height: 2px;
+}
+
+#job-info .html span:first-of-type {
+  background: var(--color-primary);
+}
+
+#job-info button {
+  margin: 25px 15px;
+}
+
+#job-info .body,
+#job-info .body div {
+  margin-left: 25px;
+}
+
+/* Section "Certificates" */
+#certificate .col {
+  padding: 26px 50px;
+}
+
+/* Section "Projects" */
+#project table tr:nth-of-type(2),
+#project table tr:nth-of-type(3),
+#project table tr:nth-of-type(4) {
+  border-bottom: var(--border-style);
+}
+
+#project table tr th {
+  padding-left: 15px;
+}
+
+#project table td:nth-of-type(3),
+#project table td:nth-of-type(4),
+#project table td:last-of-type {
+  display: flex;
+}
+
+#project table td:nth-of-type(3) p,
+#project table td:nth-of-type(4) p,
+#project table td:last-of-type p {
+  flex-basis: 250px;
+  margin: 15px;
+}
+
+#project table tr:nth-of-type(2) span,
+#project table tr:nth-of-type(2) i {
+  margin-left: 15px;
+}
+
+/* Footer */
+#footer {
+  background-color: #d3d3d3;
+}
+
+#footer div {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#footer i {
+  font-size: 24px;
+  margin: 0 50px;
+}
+
+/* Utilities */
+.hide {
+  display: none;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
